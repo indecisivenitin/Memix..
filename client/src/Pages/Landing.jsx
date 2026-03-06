@@ -10,11 +10,17 @@ const Landing = () => {
   return (
     <div className='w-screen h-screen bg-primary'>
       <Home />
-      <About />
+      <section id='about'>
+        <About />
+      </section>
       <About_2 />
-      <UseCases />
+      <section id='usecases'>
+        <UseCases />
+      </section>
       <Bottom />
-      <Footer />
+      <section id='footer'>
+        <Footer />
+      </section>
     </div>
   )
 }
