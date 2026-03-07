@@ -1,6 +1,7 @@
-import React from 'react'
+import { useNavigate } from "react-router-dom"
 
 const Bottom = () => {
+    const navigate = useNavigate()
     return (
         <div className="w-full h-[90vh] bg-primary">
             <div className="bg-[url('../src/assets/bottom.png')] bg-cover bg-center bg-no-repeat w-full h-full z-0 flex flex-col justify-center items-center relative">
@@ -15,7 +16,9 @@ const Bottom = () => {
                         <div className='bg-black h-18 w-92 '></div>
                         <div className='bg-accent h-18 w-92 absolute bottom-3 right-3 flex items-center gap-8 px-6 transition-transform duration-300 
                 hover:translate-x-2 '>
-                            <button className='text-xl cursor-pointer hover:text-primary '>Start capturing meetings</button>
+                            <button
+                            onClick={()=>navigate('/dashboard')}
+                            className='text-xl cursor-pointer hover:text-primary '>Start capturing meetings</button>
                             <div><img src="../src/assets/buttonarrow.png" alt="" /></div>
                         </div>
                     </div>
