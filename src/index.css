@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com');
+
+
+@import "tailwindcss";
+
+@theme {
+  --font-special: "Special Elite", system-ui;
+  --font-unica: "Unica One", sans-serif;
+}
+
+@theme {
+  --color-primary: #fbf3f0;
+  --color-secondary: #23154d;
+  --color-accent: #d13bff;
+  --color-nav:#f4fafd;
+  --color-aboutHeading: #b2adaa;
+}
+
+body,
+html{
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
