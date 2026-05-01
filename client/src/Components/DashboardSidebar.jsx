@@ -26,7 +26,7 @@ const DashboardSidebar = ({children}) => {
   return (
     <>
       <aside className='h-screen'>
-        <nav className='h-full flex flex-col bg-white border-r shadow-sm'>
+        <nav className='h-full flex flex-col bg-aboutHeading/20 border-r shadow-sm'>
           <div className='p-4 pb-2 flex justify-between items-center'>
             <div className={`flex justify-center items-center gap-4 ${expanded ? "w-34" : "w-0"}`}>
               <div className='bg-black w-fit p-2 rounded-md '>
@@ -34,7 +34,7 @@ const DashboardSidebar = ({children}) => {
               </div>
               <h4 className={`text-2xl font-medium ${expanded ? "text-black" : "text-transparent"}`}>Memix</h4>
             </div>
-            <button onClick={()=>setExpanded((curr)=> !curr)} className='p-1.5 rounded-lg bg-gray-50 hover:bg-gray-100'>
+            <button onClick={()=>setExpanded((curr)=> !curr)} className='p-1.5 rounded-lg bg-aboutHeading/30 hover:bg-gray-100'>
               {expanded ? <ChevronFirst /> : <ChevronLast />}
             </button>
           </div>

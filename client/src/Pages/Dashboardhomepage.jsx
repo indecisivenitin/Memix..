@@ -4,6 +4,8 @@ import { AudioLines, BellDot, Blend, Calendar, Cog, Handshake, Home, LogOut, Mes
 
 
 const Dashboardhomepage = () => {
+  const user = "Nitin"
+  const mail = "nitin@gmail.com"
   return (
     <div className='flex'>
         <Dashboard />
@@ -19,14 +21,14 @@ const Dashboardhomepage = () => {
               <UserRoundPen size={20} />
               <div className='flex flex-col  items-center gap-2 leading-2'>
                 <h4 className='-ml-24'>user</h4>
-                <h4>user@gmail.com</h4>
+                <h4>{mail}</h4>
               </div>
             </div>
           </div>
           <div className='lower-part-1 flex items-center justify-around mt-4'>
             <div>
-              <h2>Good Morning, user!</h2>
-              <p>Here's whats's happening woth your notes today</p>
+              <h2>Good Morning, {user}!</h2>
+              <p>Here's whats's happening with your notes today</p>
             </div>
             <div>
               <button className='flex items-center justify-center gap-2 bg-secondary text-white px-3 py-1 text-sm rounded-md'><PhoneCall size={18} /> Start New Meeting</button>
